@@ -1,0 +1,226 @@
+:root {
+  --body-color: #faf3dd;
+  --green-blue:#b8f2e6;
+  --green-bluedark:#22333b;
+  --body-dark:#cb997e;
+  --cherry-red:#bf0603;
+  --dull-yellow:#f4d58d;
+  --shade-white:#f4f3ee;
+  --pink-orange:#f87060;
+  --pink-cherry-red:#7b0d1e;
+  --dull-green:#cbdfbd;
+  --shade-blue:#0077b6;
+  --black-shade:#343a40;
+  --font:  14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  --font-poppins: 14px 'Poppins', sans-serif;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  height:5000px;
+  background-color: var(--shade-white);
+  user-select: none;
+  box-sizing: border-box;
+}
+
+#gumroad{
+  font: var(--font);
+  font-size:30px;
+  width: 20vw;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.titlebar{
+  height: 70px;
+  width: 100vw;
+  border: 1px solid black;
+  display: flex;
+  background-color: white;
+  justify-content: space-evenly;
+}
+#box{
+  display: inline-flex;
+  flex-direction: row;
+  width: 50vw;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 10vw;
+}
+.icon{
+  border:none;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height:35px;
+  flex-basis:100px;
+  border-radius: 50px;
+  font-size:20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.icon:hover{
+  border:1px solid black;
+  background-color: var(--black-shade);
+  color:white;
+  font-size:22px;
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+#login,#sell{
+  display: inline-flex;
+  flex-direction:row;
+  width:10vw;
+  font-weight: bold;
+  font-size:20px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+#sell{
+  background-color: var(--black-shade);
+  color: white;
+}
+#login:hover,#sell:hover{
+  background-color: var(--body-color);
+  font-size:22px;
+  color:black;
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.menubar{
+  margin:0px;
+  outline: 1px solid black;
+  margin-left: 0px;
+  padding:0px;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+height: 120px;
+  width: 100vw;
+
+}
+.search{
+
+  display:flex;
+  align-items: flex-end;
+
+
+
+  flex-basis: 60px;
+}
+#box-search{
+  /* color: white; */
+  padding-left: 0px;
+  width: 80vw;
+  height:2rem;
+  /*border: 0.0625rem solid;*/
+  /*border-radius: 0.3rem;*/
+  border: transparent 5px solid;
+  border-radius: 5px;
+  /*border-top-left-radius: 0px ;*/
+  /*border-bottom-left-radius: 0px;*/
+}
+#before-search{
+  display:inline-block;
+  /*blend-mode: color-burn;*/
+  /*box-sizing:border-box;*/
+   height:calc(2rem - 1px) ;
+  margin-left: 5px;
+  /*padding-top: 12px;*/
+  /*padding-bottom:28px;*/
+  /*box-shadow: 1px 1px 0px 1px black ;*/
+
+  width:1rem;
+  background-color: white;
+
+
+}
+#size-search{
+  background-color: white;
+  border:2px solid black;
+  border-radius: 5px;
+}
+#box-search::-webkit-input-placeholder {
+  font-size: 1rem;
+  margin-left: 15px;
+
+  font-family:var(--font-poppins);
+}
+#box-search::placeholder{
+  font-size: 1rem;
+  margin-left: 15px;
+  font-family:var(--font-poppins);
+}
+#box-search::-ms-input-placeholder {
+  font-size:1rem;
+  margin-left: 15px;
+
+
+
+  font-family:var(--font-poppins);
+}
+#box-search::-moz-placeholder {
+  font-size: 1rem;
+  margin-left: 15px;
+
+
+  font-family:var(--font-poppins);
+}
+
+.menu-list{
+  padding:0px;
+  display:flex;
+  width:1400px;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--font);
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.menu{
+  padding:0px;
+  display:flex;
+  justify-content: space-evenly;
+  width:100vw;
+  text-transform: capitalize;
+  overflow-x: scroll;
+  scroll-behavior: inherit;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+.menubaritems{
+  font-size:14px;
+  display:flex;
+  flex-wrap:nowrap;
+  width:400px;
+  height:45px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  flex-basis:300px;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+
+}
+.menubaritems:hover{
+  font-weight:bold;
+  background-color:white;
+  box-shadow: 2px 2px 0px 1.5px black;
+
+  outline: 1px solid black;
+  transition: transform 0.3s ease;
+  transform: scale(1.04);
+}
+#software{
+  padding-left: 9px;
+}
+
+
+
+
+
